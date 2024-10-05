@@ -1,11 +1,10 @@
-const Sequelize = require("sequelize");
-sequelize = new Sequelize('banconode','root','mysqluser',
-{
-    host:'localhost',
-    dialect:'mysql'
-})
+const Sequelize = require('sequelize');
+sequelize = new Sequelize('banconode', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
 
 module.exports = {
-    Sequelize,
-    sequelize
-}
+  Sequelize,
+  sequelize,
+};
